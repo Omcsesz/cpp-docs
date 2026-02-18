@@ -20,8 +20,8 @@ ms.author: msaleh
 > [!NOTE]
 > Are you here to download Visual Studio? Go to [Visual Studio downloads](https://visualstudio.microsoft.com/downloads/).
 
-> [!NOTE]
-> Having issues installing the Visual C++ Redistributable? Check out the [troubleshooting guide](troubleshoot-vcredist-installation-issues.md).
+> [!TIP]
+> Having issues installing the Visual C++ Redistributable? Check out the [troubleshooting guide](troubleshoot-vc-redistributable-installation-issues.md).
 
 This topic is for developers who need to install the Visual C++ runtime libraries with their app. If you're an end user trying to fix an app by updating the Visual C++ runtime libraries, contact the app vendor for instructions.
 

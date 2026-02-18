@@ -150,7 +150,7 @@ items:
         - name: How to audit Visual C++ Runtime version usage
           href: ../windows/redist-version-auditing.md
         - name: Troubleshoot Visual C++ Redistributable installation issues
-          href: ../windows/troubleshoot-vcredist-installation-issues.md
+          href: ../windows/troubleshoot-vc-redistributable-installation-issues.md
     - name: Deployment examples
       expanded: false
       items: 

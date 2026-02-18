@@ -23,6 +23,8 @@ The first step to diagnose an issue with the Visual C++ Redistributable installe
 
 Once you extract `vscollect.zip`, the VC Redist logs are located inside the `Temp` folder. The relevant log files are prefixed with the pattern `dd_vcredist_<arch>_yyyyMMddHHmmss`.
 
+Once you have located the VC Redist installer logs, search for words like "Error", "Failed", or "System Error" and consult the [Common Errors](#common-errors-at-a-glance) to identify the issue.
+
 ### Other log locations
 
 The VC Redist installer is often executed as a prerequisite of other products. In such cases, the installation log might be found in a different path.
@@ -43,18 +45,22 @@ In such cases, the path to the logs can be found by reading that product's own l
 10-31-2025 17:40:14.554    CONFIGURATION_MANAGER_UPDATE    67368 (0x10728)    Failed to install vc redist. Please manually install it from C:\Program Files\Microsoft Configuration Manager\CMUStaging\AA928926-5C76-4DE0-B51F-0FE4D365DFE2\SMSSETUP\BIN\X64
 ```
 
-## General troubleshooting steps
+## General troubleshooting steps when using the Visual C++ Redistributable installer
 
 This section describes general troubleshooting methods you can try to resolve issues with the VC Redist installer.
 
 ### Disable antivirus software temporarily
 
-Security products often block installation of VC Redist components.
+Antivirus software often block installation of VC Redist components.
 
 1. Turn off Windows Defender real-time protection.
 1. Disable any corporate endpoint protection temporarily (Symantec, McAfee, etc.).
 1. Retry the installation.
 1. Reenable any disabled protection software.
+
+> [!WARNING]
+> Re-enable any disabled protection software after completing these steps.
+
 
 ### Run the Visual C++ Redistributable installer as administrator
 
@@ -63,7 +69,7 @@ File-access failures are heavily correlated with insufficient permissions.
 1. Right-click the VC Redist installer and select **Run as Administrator**.
 1. Retry the installation.
 
-### Check for Windows System Updates
+### Check for Windows updates
 
 On rare occasions, outdated system components can cause installation issues.
 
@@ -71,7 +77,7 @@ On rare occasions, outdated system components can cause installation issues.
 2. Reboot your PC.
 3. Retry the installation.
 
-## General troubleshooting steps when using Visual Studio Installer
+## General troubleshooting steps when using the Visual Studio Installer
 
 ### Manually install Visual C++ Redistributable
 
@@ -82,7 +88,7 @@ On rare occasions, outdated system components can cause installation issues.
 1. Run the VC Redist installer.
 1. Retry the Visual Studio Installer.
 
-If the manual installation fails, follow the [general troubleshooting steps for the standalone VC Redist installer](#general-troubleshooting-steps).
+If the manual installation fails, follow the [general troubleshooting steps for the standalone VC Redist installer](#general-troubleshooting-steps-when-using-the-visual-c-redistributable-installer).
 
 ### Clear the Visual Studio Installer cache
 
@@ -92,9 +98,12 @@ If the manual installation fails, follow the [general troubleshooting steps for 
 
 ### Repair the Visual Studio Installer
 
-1. Go to **Settings** > **Apps** > **Installed Apps**
-1. Select **Visual Studio Installer** > **Modify** > **Repair**
-1. Retry the Visual Studio Installer.
+1. Open the **Settings** app.
+1. Search for **Installed Apps** using the search bar at the top of the window.
+1. Search for **Visual Studio Installer**.
+1. Click on the "**...**" button and select **Modify** from the drowdown list.
+1. Select the optin to **Repair** the Visual Studio Installer.
+1. Retry the VS installation.
 
 ### Delete the Visual Studio Installer folder
 
@@ -147,7 +156,7 @@ Installation fails with error code 32. Files in use by another process, interfer
 **Steps to resolve**
 
 1. Close any running software in your PC.
-1. Try the methods in [General troubleshooting steps](#general-troubleshooting-steps).
+1. Try the methods in [General troubleshooting steps](#general-troubleshooting-steps-when-using-the-visual-c-redistributable-installer).
 
 If the installation fails, try to restart your PC to release any locked files.
 
