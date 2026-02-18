@@ -145,7 +145,7 @@ Download Redistributable files for other languages and architectures from:
 - [C++ binary compatibility between Visual Studio versions](../porting/binary-compat-2015-2017.md)
 - [How to audit Visual C++ Runtime version usage](redist-version-auditing.md)
 - [Lifecycle FAQ - Visual C++ Redistributable and runtime libraries](/lifecycle/faq/visual-c-faq)
-- [Troubleshoot Visual C++ Redistributable installation issues](troubleshoot-vcredist-installation-issues.md)
+- [Troubleshoot Visual C++ Redistributable installation issues](troubleshoot-vc-redistributable-installation-issues.md)
 
 **Release notes**
 

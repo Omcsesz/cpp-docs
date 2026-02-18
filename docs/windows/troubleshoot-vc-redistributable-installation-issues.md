@@ -23,7 +23,7 @@ The first step to diagnose an issue with the Visual C++ Redistributable installe
 
 Once you extract `vscollect.zip`, the VC Redist logs are located inside the `Temp` folder. The relevant log files are prefixed with the pattern `dd_vcredist_<arch>_yyyyMMddHHmmss`.
 
-Once you have located the VC Redist installer logs, search for words like "Error", "Failed", or "System Error" and consult the [Common Errors](#common-errors-at-a-glance) to identify the issue.
+Search the VC Redist logs for terms like "Error", "Failed", or "System Error" and consult the [Common Errors](#common-errors-at-a-glance) to identify the issue.
 
 ### Other log locations
 
@@ -51,7 +51,7 @@ This section describes general troubleshooting methods you can try to resolve is
 
 ### Disable antivirus software temporarily
 
-Antivirus software often block installation of VC Redist components.
+Antivirus software often blocks installation of VC Redist components.
 
 1. Turn off Windows Defender real-time protection.
 1. Disable any corporate endpoint protection temporarily (Symantec, McAfee, etc.).
@@ -77,7 +77,7 @@ On rare occasions, outdated system components can cause installation issues.
 2. Reboot your PC.
 3. Retry the installation.
 
-## General troubleshooting steps when using the Visual Studio Installer
+## General troubleshooting steps when using Visual Studio Installer
 
 ### Manually install Visual C++ Redistributable
 
@@ -101,8 +101,8 @@ If the manual installation fails, follow the [general troubleshooting steps for 
 1. Open the **Settings** app.
 1. Search for **Installed Apps** using the search bar at the top of the window.
 1. Search for **Visual Studio Installer**.
-1. Click on the "**...**" button and select **Modify** from the drowdown list.
-1. Select the optin to **Repair** the Visual Studio Installer.
+1. Click on the "**...**" button and select **Modify**.
+1. Select the option to **Repair** the Visual Studio Installer.
 1. Retry the VS installation.
 
 ### Delete the Visual Studio Installer folder
@@ -121,7 +121,7 @@ This method helps in case the installer metadata is corrupted, deleting the inst
 
 ### Common errors at a glance
 
-* [Generic installation failure (return code 1603)](#return-code-1603)
+* [Generic installation failure (return code 1603)](#generic-installation-failure)
 * [Access denied (return code 5)](#access-denied)
 * [File is locked (return code 32)](#file-is-locked)
 * [Corrupt or invliad installer package (return code 1620)](#corrupt-or-invalid-installer-package)
